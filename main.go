@@ -19,6 +19,10 @@ func main() {
 	// Serve static files from the "css" directory
 	http.Handle("/css/", http.StripPrefix("/css/", http.FileServer(http.Dir("css"))))
 
+	// Serve static files from the "assets" directory
+	fs := http.FileServer(http.Dir("assets"))
+	http.Handle("/assets/", http.StripPrefix("/assets/", fs))
+
 	// Handle the root path
 	http.HandleFunc("/", h1)
 
