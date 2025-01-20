@@ -27,3 +27,9 @@ html,
 body {
     background: linear-gradient(#050505, #050505);
 }
+
+.container {
+    width: 100%;
+    display: flex;
+    grid-template-columns: 1fr 4fr 2fr;
+}
