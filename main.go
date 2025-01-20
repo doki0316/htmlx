@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello world")
+	fmt.Println("Go ArtlistPirate")
 
 	// Handler for the root path
 	h1 := func(w http.ResponseWriter, r *http.Request) {
