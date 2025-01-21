@@ -79,7 +79,19 @@ p {
     color: #fff;
 }
 
+.music1 {
+    position: relative;
+}
+
 .music1 img{
-    width: 100px;
+    position: relative;
+    top: -10px; /* i need position to modify */
+    width: 150px;
+    transition: transform 0.3s ease;
     border-radius: 10px;
+}
+
+
+.music1:hover img {
+    transform: translateY(-10px);
 }
