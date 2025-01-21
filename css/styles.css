@@ -82,15 +82,37 @@ p {
 }
 
 .nav-links {
+    text-transform: uppercase;
+    color: #919191;
+    transition: all 0.3s ease;
     position: relative;
     top: -330px;
+    left: 150px;
     display: flex;
     gap: 10px;
 }
 
 .search {
     position: relative;
-    top: -330px;
+    align-items: center;
+    top: -355px;
     display: flex;
-    
+    left: 350px;
+    gap: 6px;
+    width: 130%;
+    background-color: #1d1d1d;
+    border: 2px solid #919191;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container main header .nav-links a:hover {
+    color: bisque;
+}
+
+.container main header .search input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
 }
