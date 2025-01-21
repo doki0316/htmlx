@@ -1,55 +1,65 @@
+/* Existing CSS */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    
+    font-family: 'Oswald', sans-serif; /* Use Oswald font */
 }
 
-a{
+a {
     text-decoration: none;
-    color: #fff;
+    color: #fff; /* Default link color */
 }
 
-i{
+i {
     color: #fff;
     cursor: pointer;
 }
 
-img{
+img {
     object-fit: cover;
     object-position: top;
     border-radius: 8px;
+    width: 20px;
 }
 
 html,
-body{
+body {
     background: linear-gradient(#050505, #18181d);
     height: 100vh;
 }
 
-.container{
+.container {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 4fr 2fr;
-    background: linear-gradient(#050505, #18181d);;
+    grid-template-columns: 250px 1fr 2fr; /* Adjust for sidebar width */
+    background: linear-gradient(#050505, #18181d);
 }
 
-.container .sidebar{
+.container .sidebar {
     height: 100vh;
     background-color: #18181d;
     padding: 20px 36px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    z-index: 10000;
-    transition: all 0.6s ease;
+    position: relative; /* Added position */
+    z-index: 10000; /* Ensure z-index works */
 }
 
+/* New rule to change the color of menu titles to white */
+.container .sidebar h5 {
+    color: #fff; /* Change the color to white */
+}
 
+/* Remove the width setting for these elements */
 
-.container, .sidebar, .playing, .top, img {
-    width: 20px;
+h4 {
+    color: #fff;
+}
+
+p {
+    color: #fff;
 }
