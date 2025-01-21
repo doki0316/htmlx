@@ -80,18 +80,16 @@ p {
 }
 
 .music1 {
-    position: relative;
+    position: relative; /* Set the parent to relative positioning */
+    margin: 30px; /* Optional: Add some margin for spacing */
+    border: 1px ; /* Optional: Border for visibility */
+    padding: 20px; /* Optional: Padding for visibility */
 }
 
-.music1 img{
-    position: relative;
-    top: -10px; /* i need position to modify */
-    width: 150px;
-    transition: transform 0.3s ease;
-    border-radius: 10px;
-}
-
-
-.music1:hover img {
-    transform: translateY(-10px);
+.music1 img {
+    position: relative; /* Ensure the image is positioned */
+    top: -40px; /* Move the image up */
+    width: 150px; /* Set the width */
+    transition: transform 0.3s ease; /* Transition for transform */
+    border-radius: 10px; /* Rounded corners */
 }
