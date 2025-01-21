@@ -23,6 +23,9 @@ func main() {
 	fs := http.FileServer(http.Dir("assets"))
 	http.Handle("/assets/", http.StripPrefix("/assets/", fs))
 
+	musicFS := http.FileServer(http.Dir("music"))
+	http.Handle("/music/", http.StripPrefix("/music/", musicFS))
+
 	// Handle the root path
 	http.HandleFunc("/", h1)
 
